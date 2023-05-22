@@ -60,7 +60,7 @@ const AddProducts = () => {
           noValidate
           autoComplete="off"
         >
-          <TextField id="outlined-basic" variant="filled" type='file' name='img'  {...register('img')} onChange={handleChange} />
+          <TextField id="outlined-basic" variant="filled" type='outlined' name='img'  {...register('img')} onChange={handleChange} />
           {
             errors.img?.message && <p style={{ color: "red" }}>{errors.img?.message}</p>
           }
